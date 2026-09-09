@@ -1,9 +1,20 @@
 % Shreyam - Curriculum Vitae for IOM3 CEng Chartership Application
 % Compiles with pdflatex (no custom fonts/classes required).
 %
-% This is a working draft. Sections marked [TODO: ...] need information
-% that has not been provided yet -- see README.md at the repo root for
-% the full list of what's still needed.
+% IMPORTANT: the EET Fuels / Essar programme detail in this draft comes
+% from evidence you say you gathered yourself (meetings, documents,
+% correspondence). It has not been independently verified. Before this
+% goes anywhere near an actual IOM3 submission, check every bullet below
+% is something you can personally stand behind at interview, and adjust
+% any bullet that overstates your role vs. the wider team's.
+%
+% Internal specifics (document names, server/hostnames, colleagues'
+% names) have deliberately been left out of this CV -- see
+% chartership-cv/competency-evidence.md for the fuller private working
+% notes to draw on when writing the actual UK-SPEC competence report.
+%
+% Remaining [TODO: ...] markers need information not yet provided --
+% see README.md at the repo root for the full list.
 
 \documentclass[11pt,a4paper]{article}
 
@@ -22,6 +33,9 @@
 \titleformat{\subsection}{\bfseries}{}{0em}{}
 \titlespacing{\subsection}{0pt}{6pt}{2pt}
 
+\titleformat{\subsubsection}{\bfseries\itshape}{}{0em}{}
+\titlespacing{\subsubsection}{0pt}{4pt}{1pt}
+
 \setlist[itemize]{leftmargin=1.4em, topsep=2pt, itemsep=2pt, parsep=0pt}
 
 \pagenumbering{gobble}
@@ -33,6 +47,8 @@
 %-----------------------------------------------------
 \begin{center}
     {\Huge \bfseries Shreyam}\\[4pt]
+    Digital Analyst \textbar{} Industrial Digitalisation \textbar{} Operational
+    Technology \textbar{} Engineering Data Systems \textbar{} Oil \& Gas \\[4pt]
     +44 7854 00 3170 \textbar{} +91 8348 278095 \textbar{}
     \href{mailto:shreyamkmr@gmail.com}{shreyamkmr@gmail.com} \\
     \href{https://github.com/Shreyamkmr}{github.com/Shreyamkmr} \textbar{}
@@ -45,12 +61,19 @@
 % PROFESSIONAL SUMMARY
 %-----------------------------------------------------
 \section*{Professional Summary}
-Metallurgical and Materials Engineer turned digitalization specialist, currently
-leading data-driven reliability, HR, procurement and EPS projects at Essar Oil UK.
-Working towards Chartered Engineer (CEng) status with the Institute of Materials,
-Minerals and Mining (IOM3).
-% [TODO: refine this once we know which UK-SPEC route (Further Learning /
-% Standard) and which competencies your experience will be mapped against]
+Metallurgical and Materials Engineer working as a Digital Analyst within a
+major UK oil refinery, delivering industrial digitalisation, operational
+technology integration and engineering workflow automation across
+reliability, energy, risk, logistics and communications functions. Experience
+spans digital radio infrastructure deployment, engineering risk management
+systems, industrial data platforms (PI Systems, SAP, SQL), reliability and
+defect-elimination programmes, energy performance reporting, and
+stakeholder engagement across engineering, operations, maintenance and IT.
+Working towards Chartered Engineer (CEng) registration with the Institute of
+Materials, Minerals and Mining (IOM3), assessed against the Engineering
+Council's UK-SPEC standard.
+% [TODO: confirm UK-SPEC route -- Standard, Further Learning, or
+% Experiential Learning -- once known]
 
 %-----------------------------------------------------
 % CHARTERSHIP / PROFESSIONAL MEMBERSHIP
@@ -61,8 +84,7 @@ Minerals and Mining (IOM3).
           [TODO: membership grade, membership number, date joined]
     \item Target qualification: Chartered Engineer (CEng), assessed against the
           Engineering Council's UK-SPEC standard
-          % [TODO: confirm route -- Standard, Further Learning, or
-          % Experiential Learning -- once known]
+          % [TODO: confirm route once known]
 \end{itemize}
 
 %-----------------------------------------------------
@@ -87,19 +109,120 @@ Cumulative GPA: 10 / 10
 %-----------------------------------------------------
 \section*{Employment History}
 
-\subsection*{Essar Oil UK Ltd. --- Digital Analyst, Digitalization}
-Oct 2023 -- Present, Cheshire, England, United Kingdom
+\subsection*{EET Fuels (formerly Essar Oil UK Ltd.) --- Digital Analyst, Digitalization}
+Oct 2023 -- Present, Stanlow Refinery, Cheshire, England, United Kingdom
+
+Digital Analyst delivering industrial digitalisation and operational
+technology integration across reliability, energy, risk, logistics and
+communications functions at the refinery. Selected programmes:
+% [TODO: for every programme below, add your specific scope vs. the
+% wider team's -- what you personally designed/decided vs. coordinated --
+% assessors weight individual contribution heavily]
+
+\subsubsection*{Digital Radio Migration and Operational Communications Modernisation}
 \begin{itemize}
-    \item Lead data-driven digital projects across multiple functions, including
-          reliability, HR, technology, EPS and procurement, using data analytics,
-          IoT, AI and cloud computing to optimize processes and improve efficiency.
-    \item Delivered significant enhancements to condition-based monitoring (CBM),
-          employee performance management and production accounting.
-    \item Reduced costs and improved decision-making through spend analysis and
-          contractor management.
-    % [TODO: add scope/scale detail an assessor would want -- team size,
-    % budget influenced, stakeholders managed, specific engineering judgement
-    % or risk decisions you made -- this is the "more experience" to add]
+    \item Coordinated migration of refinery and terminal communications from
+          analogue to digital radio infrastructure, including deployment
+          strategy, channel allocation planning and handset configuration
+          standards for refinery and marine operations.
+    \item Worked with operations, maintenance, marine, engineering and
+          external radio specialists to capture operational requirements and
+          translate them into technical solutions.
+    \item Supported communication resilience and emergency-response capability
+          (including lone-worker protection, man-down monitoring and public
+          warning) through network planning and user acceptance activity.
+    \item Delivered training and adoption programmes for operational teams and
+          managed stakeholder engagement across business units and external
+          suppliers through implementation and go-live.
+    \item Contributed to risk assessment and operational readiness activities
+          associated with the communications infrastructure change.
+\end{itemize}
+
+\subsubsection*{Reliability Engineering and Defect Elimination Digitalisation}
+\begin{itemize}
+    \item Worked with engineering subject matter experts to digitise failure
+          analysis, root cause investigation (including 5-Why methodology) and
+          corrective action workflows.
+    \item Developed Bad Actor and equipment-failure reporting (Power BI) to
+          improve visibility of historical performance and engineering
+          actions, integrating engineering data sources to support
+          evidence-based maintenance and reliability decisions.
+    \item Contributed to a structured reliability-improvement governance
+          framework covering failure data quality, action closure and review
+          cadence.
+\end{itemize}
+
+\subsubsection*{Operational Risk Assessment (ORA) Digital Transformation}
+\begin{itemize}
+    \item Developed and enhanced digital workflows for operational risk
+          assessment and engineering governance, including workflow
+          automation, approval routing, action management and audit-trail
+          functionality.
+    \item Worked with engineering stakeholders to align digital solutions with
+          existing operational risk controls and assurance requirements.
+    \item Conducted user acceptance testing and process reviews with
+          stakeholders to improve usability, traceability and compliance.
+    \item Transformed legacy permit-to-work data into advanced historical and
+          near real-time monitoring reports, enabling proactive corrective
+          action on permit compliance.
+\end{itemize}
+
+\subsubsection*{Energy Management and Optimisation}
+\begin{itemize}
+    \item Developed a refinery energy-performance dashboard (PI Vision, Power
+          BI) covering furnace performance, Energy Intensity Index, steam
+          consumption, power generation and flare recovery.
+    \item Worked with process engineers to validate engineering calculations,
+          clean process data and improve the accuracy of energy KPIs.
+    \item Improved visibility of energy losses and efficiency opportunities to
+          support sustainability and cost-reduction objectives.
+\end{itemize}
+
+\subsubsection*{Industrial Data Platforms and PI Systems Infrastructure}
+\begin{itemize}
+    \item Supported architecture and optimisation of PI System data
+          acquisition and industrial analytics environments, including
+          integration design between operational technology platforms and
+          enterprise analytics solutions; evaluated performance and API
+          optimisation approaches and produced supporting technical
+          documentation.
+    \item Orchestrated a real-time performance analytics solution for plant
+          rotary equipment, integrating process, sensor and system data
+          (Aveva PI, SAP PM, CPI) into a unified reporting framework with
+          automated dashboards and alerting.
+    \item Integrated real-time tank data from multiple sources into a unified
+          platform combining operational, metadata and geospatial information
+          to support forecasting of capacity, availability and maintenance
+          schedules.
+\end{itemize}
+
+\subsubsection*{Enterprise Reporting Integration (Volume Tracker)}
+\begin{itemize}
+    \item Designed and implemented a reporting platform integrating SAP, SQL
+          Server and SharePoint data sources for financial and operational
+          volume tracking.
+    \item Produced architecture, unit testing, system integration testing and
+          user acceptance testing documentation.
+    \item Improved reporting reliability and standardisation by automating
+          previously manual reconciliation.
+\end{itemize}
+
+\subsubsection*{Live Lifting Analytics Platform}
+\begin{itemize}
+    \item Built a near real-time logistics analytics platform integrating
+          operational data into Power BI to improve visibility of product
+          lifting operations.
+    \item Worked with terminal operations and logistics stakeholders to define
+          requirements and reporting outputs.
+\end{itemize}
+
+\subsubsection*{Automation and AI Initiatives}
+\begin{itemize}
+    \item Identified and developed process automation using Power Automate and
+          AI Builder.
+    \item Led discovery and requirements gathering for AI-enabled (Copilot)
+          use cases, supporting reduction of manual effort across business
+          functions.
 \end{itemize}
 
 \subsection*{Vedanta Ltd. --- Associate Manager, Digitalization, Aluminium \& Power}
@@ -110,8 +233,7 @@ Aug 2022 -- Oct 2023, Jharsuguda, Odisha, India
           technologies.
     \item Actively participated in decision workshops, empowering leaders with
           insights through stakeholder partnership and data analytics.
-    % [TODO: same as above -- responsibility, leadership and technical
-    % judgement detail]
+    % [TODO: responsibility, leadership and technical judgement detail]
 \end{itemize}
 
 \subsection*{ArcelorMittal Nippon Steel --- R\&D Intern}
@@ -137,30 +259,39 @@ May 2018 -- June 2022
 \end{itemize}
 
 %-----------------------------------------------------
-% KEY PROJECTS
+% UK-SPEC COMPETENCY SUMMARY
 %-----------------------------------------------------
-\section*{Key Projects}
-% [TODO: once competency mapping is agreed, reorder/select projects to
-% best evidence UK-SPEC areas A-E rather than listing everything]
+\section*{UK-SPEC Competency Summary}
+% [TODO: this is a first-pass mapping to help structure the eventual
+% competence report -- it needs your own review, and each line needs the
+% specific, personal evidence (not just the programme name) that the
+% competence report will require.]
+\begin{itemize}
+    \item[\textbf{A --- Knowledge \& Understanding:}] Industrial data systems
+          and OT integration (PI Systems); process industry digitalisation
+          (Energy Management, Volume Tracker); reliability and defect
+          elimination engineering; engineering risk management (ORA).
+    \item[\textbf{B --- Design \& Development:}] Workflow design (ORA, Defect
+          Elimination); data architecture (Volume Tracker, PI Systems,
+          Digital Twins); digital solution design (Energy Management
+          dashboard, Live Lifting Analytics).
+    \item[\textbf{C --- Responsibility \& Leadership:}] Radio migration
+          rollout coordination; stakeholder and vendor management across
+          multiple business units; training delivery; team leadership
+          (Aerial Robotics Lab, 10-person team, INR 15M budget).
+    \item[\textbf{D --- Communication:}] Cross-functional engagement across
+          engineering, operations, maintenance and IT; UAT and process-review
+          workshops; training sessions; technical documentation.
+    \item[\textbf{E --- Professional Commitment:}] Safety-relevant
+          communications project (lone-worker/man-down/public-warning
+          systems); operational risk digitisation; reliability-culture
+          improvement; CPD record [TODO: still to be added].
+\end{itemize}
 
-\subsection*{Digital Twins for Plant Rotary Equipment --- Essar UK Services Ltd.}
-\textit{Aveva PI, PI Vision, Power BI, SQL, on-premise data gateway, custom visuals, SAP PM, CPI} \\
-Orchestrated a real-time performance analytics solution integrating process,
-sensor and system data into a unified reporting framework; defined KPIs, built
-automated dashboards and alerting for proactive decision-making and measurable
-reliability improvements.
-
-\subsection*{Advanced Analytics for e-Permit to Work --- Essar UK Services Ltd.}
-\textit{Power BI, SQL, on-premise data gateway, custom visuals} \\
-Transformed legacy permit data into advanced historical and near real-time
-monitoring reports, enabling proactive corrective action and measurable cost
-savings.
-
-\subsection*{Analytics Platform for Tanks --- Essar UK Services Ltd.}
-\textit{Power BI, SQL, on-premise data gateway, SharePoint, Excel, forecasting, OLEDB, PI SQL Commander} \\
-Integrated real-time tank data from multiple sources into a unified platform
-combining operational, metadata and geospatial information to support
-forecasting of capacity, availability and maintenance schedules.
+%-----------------------------------------------------
+% SELECTED TECHNICAL PROJECTS (PRIOR ROLES)
+%-----------------------------------------------------
+\section*{Selected Technical Projects (Prior Roles)}
 
 \subsection*{Statistical Optimization of Rolling Mill --- Vedanta Ltd.}
 \textit{Power BI, SQL, on-premise data gateway, OSI PI, MES, ML.NET} \\
@@ -200,8 +331,8 @@ autonomous delivery of vaccines and medicines to remote areas.
 %-----------------------------------------------------
 \section*{Continuing Professional Development}
 % [TODO: this section is required by IOM3/UK-SPEC assessors and is
-% currently empty -- add training courses, conferences, internal
-% certifications, and any CPD log entries]
+% currently thin -- add training courses, conferences, internal
+% certifications, and any CPD log entries since starting work]
 \begin{itemize}
     \item Specialization in Data Science in R --- Johns Hopkins University
     \item Machine Learning --- Stanford University
@@ -213,8 +344,9 @@ autonomous delivery of vaccines and medicines to remote areas.
 %-----------------------------------------------------
 \section*{Skills}
 \textbf{Languages:} R, Python, C++, SQL, Power Query (M), DAX \\
-\textbf{Software \& Technology:} Git, Microsoft Power Platform, RPA, Excel,
-GitHub Pages, Power BI, Tableau
+\textbf{Software \& Technology:} Git, Microsoft Power Platform (Power
+Automate, AI Builder, Copilot), RPA, Excel, GitHub Pages, Power BI, Tableau,
+PI Vision, PI AF, SAP (PM, KE24), SharePoint
 
 %-----------------------------------------------------
 % AWARDS & RECOGNITION
