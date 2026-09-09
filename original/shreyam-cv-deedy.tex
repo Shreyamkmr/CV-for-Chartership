@@ -1,0 +1,359 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+
+%\usepackage[bottom=0.01in]{geometry}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  DEsigin
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{eso-pic}
+\usepackage{graphicx}
+\usepackage{atbegshi}
+
+%\AtBeginShipout{\AtBeginShipoutAddToBox{\AddToShipoutPictureBG*{\includegraphics[width=\paperwidth,height=\paperheight]{Picsart_23-06-21_15-35-35-378.jpg}}}}
+
+%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%
+\pagestyle{fancy}
+\fancyhf{}
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\includegraphics[height=2.72cm]{Shreyam_P.png}
+
+\vspace{-20mm}
+\namesection{}{Shreyam}{
+ +44-7854 00 3170 | +91-8348278095 | \href{mailto:shreyamkmr@gmail.com}{shreyamkmr@gmail.com}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+\subsection{Indian Institute of \newline technology Kharagpur}
+\descripts{B.Tech.+ M.Tech. 5 Yr. Dual Degree \newline in Metallurgical and Materials Eng.}
+\location{ Cum.GPA: 7.92 / 10}
+\location{July 2022 | Kharagpur, India}
+\sectionsep
+
+
+\subsection{Shivam Convent || A Level}
+\location{June 2017 | Patna, India}
+\location{ \%age: 90.40\% }
+\sectionsep
+
+\subsection{Satyam International || GCSE}
+\location{April 2015 | Patna, India}
+\location{ Cum. GPA: 10 / 10 }
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+
+\section{Links}
+Github:// \href{https://github.com/Shreyamkmr}{\bf Shreyamkmr} \\
+LinkedIn:// \href{https://in.linkedin.com/in/shreyam-%E2%A0%80-bb066b17a?trk=public_profile_browsemap}{\bf Shreyam} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{UG \& PG}
+\textbullet{}Programming and Data Structures\\
+\textbullet{}Basic Electronics\\
+\textbullet{}Probability \& Stochastic Processes\\
+\textbullet{}Artificial Intelligence: Foundations and Applications\\
+\textbullet{}Image Processing\\
+\textbullet{}Embedded Communication Networks\\
+\textbullet{}Security Aware CPS and IoT Design\\
+\textbullet{}Machine Learning for Earth System Sciences\\
+\textbullet{}Phase Transformation and Heat Treatment of Materials\\
+\textbullet{}X-Ray Diff \& Trans. Electron Microscopy
+\sectionsep
+\subsection{MOOCs}
+\textbullet{}Specialization in \textbf{Data Science} in R || \textbf{John Hopkins}\\
+\textbullet{}\textbf{Machine Learning} || \textbf{Stanford University}\\
+\textbullet{}SQL Queries ||\textbf{DataCamp}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Languages}
+%\location{Over 5000 lines:}
+R \textbullet{}  Python \textbullet{} C++
+\textbullet{} SQL
+\textbullet{} Power Querry(M)
+\textbullet{} DAX
+\sectionsep
+\subsection{Software\& Technology}
+%\location{Over 5000 lines:}
+Git \textbullet{} MS Power Platform \textbullet{} RPA \textbullet{} Excel \textbullet{} Github Pages \textbullet{} Power BI \textbullet{} Tableau
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COLUMN TWO
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Essar Oil UK  Ltd.}
+\descript{|Digital Analyst Digitalization }
+\location{Oct 2023 – Present | Cheshire, England, United Kingdom}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\vspace{\topsep}
+\item Lead data-driven \textbf{Digital} projects across \textbf{multiple  functions}, including \textbf{reliability} , \textbf{HR}, Technology, \textbf{EPS} and \textbf{procurement}. Utilize data analytics, IoT, AI, and cloud computing to optimize processes and improve efficiency. Achieving significant enhancements in CBM, employee performance management, production Accounting. Reduce costs and improve decision-making through spend analysis and \textbf{contractor management}.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Vedanta Ltd.}
+\descript{| Associate Manager-Digitalization, AL \& Power }
+\location{Aug 2022 - Oct 2023 | Jharsuguda, Odisha}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\vspace{\topsep}
+%\item Developed and implemented a \textbf{Mill speed optimization} Statistical Model to reduce roll contact time during aluminium sheet manufacturing. Utilized historical data from \textbf{OSI PI} to  deliver a near-real time \textbf{Power BI} dashboard that suggests \& predicts savings resulting from recommended operational changes.
+
+\item Enabling \textbf{data-driven} insights for strategic decision-making, championing \textbf{Cost-Saving \& Volume Increase} initiatives, and advising on \textbf{Emerging technologies}. Actively participating in decision workshops, empowering leaders with valuable insights through \textbf{stakeholder partnership} and \textbf{Data Analytics}.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Arcellor Mittal Nippon Steel}
+\descript{| R\&D Intern }
+\location{Dec 2019 – Jan 2020 | Hazira, Gujrat}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed a predictive model for steel properties using \textbf{machine learning }algorithms (\textbf{Regression Tree, Random Forest, SVM}) and \textbf{5-fold cross-validation} for performance assessment. Created intuitive features like carbon equivalents to predict properties such as weld joint brittleness and heat treatment requirements.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Aerial Robotics Lab}
+\descript{| Student Research Group - IIT KGP}
+\location{May 2018 – June 2022 | Head- Hardware \& Embedded Team}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+%%%% yet to fill
+%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%
+\item Managed and directed a team of 10 junior Hardware and Embedded members, successfully completing an \textbf{autonomous aerial delivery} project for medicines and vaccines. Secured funding from the \textbf{Indian Council of Medical Research} and oversaw participation in group \textbf{projects and competitions}.
+
+\item Additionally, effectively managed a budget of 15 million INR, ensuring financial stability through careful monitoring and redistribution of funds.
+\end{tightemize}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{Digital Twins for Plant Rotary Equipments}
+\descript{Essar UK Services Ltd.}
+\location{Aveva PI, PI Vision, Power BI, SQL, On-premise data gateway, Custom Visuals, SAP PM,CPI}
+\vspace{\topsep}
+Orchestrated the development of a real-time performance analytics solution by integrating multiple data sources (\textbf{process data, sensor data, and system data}) into a unified \textbf{reporting framework}. Defined key \textbf{performance metrics}, built \textbf{automated dashboards}, and enabled continuous monitoring against expected benchmarks. Delivered clear, \textbf{actionable insights} through reporting and \textbf{alerting mechanisms}, supporting proactive \textbf{decision-making} and measurable improvements in \textbf{performance} and \textbf{reliability}.
+\sectionsep
+
+
+\end{minipage}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%page 2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.30\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Acheivements & Rewards
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Recognition}
+\subsection{Awards}
+%\location{Over 5000 lines:}
+\textbullet{} Essar UK Services Ltd. \newline  \textbf{SPOT} \textbf{Awardee}
+\newline
+\textbullet{} Vedanta Aluminium And Power \newline  \textbf{Sector CEO} Awardee
+\newline
+\textbullet{}  \textbf{IMAV-2019} Winner
+\sectionsep
+
+\subsection{Achievements}
+%\location{Over 5000 lines:}
+\textbullet{} NDA-II AFSB Qualified
+\newline
+\textbullet{} 12th Std. Star Achiever
+
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{}
+\runsubsection{Advanced Analytics for e-Permit to Work}
+\descript{Essar UK Services Ltd.}
+\location{Power BI, SQL, On-premise data gateway, Custom Visuals}
+\vspace{\topsep}
+Transformed legacy permit data into \textbf{actionable insights} by creating advanced reports for historical and near real-time \textbf{performance monitoring}. Enabled active monitoring and facilitated \textbf{corrective actions}, empowering stakeholders to address inefficiencies proactively and drive \textbf{measurable cost savings} and improved \textbf{operational efficiency}.
+\sectionsep
+
+\runsubsection{Analytics Platform for Tanks}
+\descript{Essar UK Services Ltd.}
+\location{Power BI, SQL, On-premise data gateway, SharePoint, Excel, Forecasting,Custom Visuals,OLEDB, PI SQL Commander}
+\vspace{\topsep}
+Spearheaded the integration of \textbf{real-time tank data} from multiple sources into a unified \textbf{analytics platform}, combining operational, metadata, and \textbf{geospatial information} to support \textbf{strategic forecasting} of capacity, \textbf{availability}, and \textbf{maintenance schedules}. Delivered \textbf{actionable insights} for optimized resource allocation and \textbf{proactive planning}, enabling data-driven decision-making and improved operational efficiency.
+\sectionsep
+
+\runsubsection{Statistical Optimization of Rolling Mill}
+\descript{Vedanta Ltd.}
+\location{Power BI, SQL, On-premise data gateway, OSI Pi, MES, ML.NET}
+\vspace{\topsep}
+Developed a \textbf{mill speed optimization} model for aluminum sheet manufacturing to minimize \textbf{roll contact time}. Leveraged Aveva PI data to create a near-real-time Power BI dashboard, predicting savings from recommended operational changes based on optimal rolled product simulations.
+\sectionsep
+
+\runsubsection{Day Ahead Price Prediction Model For IEX}
+\descript{Vedanta Ltd.}
+\location{REST API, Python, Machine Learning, TensorFlow Keras, Power BI, Trading}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+  Developed a LSTM-based \textbf{Deep Learning model} using \textbf{Keras} to predict the \textbf{DAM Price} of IEX. Involved \textbf{EDA}, integration from the IEX \textbf{API} to the the Model using Power Query. Additionally, created a \textbf{Power BI} Dashboard that presents 15 minute block-wise price predictions for the next whole day with a 24-hour advanced notice With Round the Clock Residual of \textbf{less than ±5\%} .
+
+%\sectionsep
+
+
+\sectionsep
+\runsubsection{Smart CW Pump Running suggestion}
+\descript{Vedanta Ltd.}
+\location{OSI Pi, Pi Data Link, Python, PiConnect}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+Developed a \textbf{linear programming optimization} solution to suggest the best circulating water pump configuration at a\textbf{ 4x600 MW} Vedanta thermal power plant. Utilized real-time data from PI Points to minimize \textbf{auxiliary power consumption}.
+\sectionsep
+
+\runsubsection{BALCO's Coal Truck GPS Data analytics}
+\descript{Vedanta Ltd.}
+\location{R studio,Leaflet, Geosphere, Coal Logistics}
+
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+Analysis of Coal trucks for \textbf{coal pilferage}.More than \textbf{8000 trips} from 5 different mines to the BALCO plant. Identified critical zones of trips where stoppages are high, \textbf{Frequent Route deviating} trucks, shorter faster routes w.r.t. Hour of day.
+
+\sectionsep
+
+\runsubsection{RPA in Finance Taxation}
+\descript{Vedanta Ltd.}
+\location{Power Automate, AI builder, Sharepoint}
+\vspace{\topsep}
+Developed an unattended Robotic Process Automation bot to fetch the Invoice details of \textbf{Bill of Entry} and \textbf{Shipping bills} to an One Drive excel file.Automated trigger based on mail sent by Indian Customs. Uses \textbf{AI} builder module of the \textbf{Microsoft Power platform} to get required field(100+ in numbers).\\
+\sectionsep
+
+\runsubsection{Autonomous UAV for Delivery-ICMR}
+\descript{ARL-IIT KGP}
+\location{Ardupilot, Pix-Hawk, Raspberry pi, Mission Planner, LiDAR, GPS Blending}
+\vspace{\topsep}
+%%%% yet to fill
+%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%
+Designed and built a \textbf{hexacopter} UAV platform with a \textbf{Pixhawk} 2 flight controller and a variety of sensors. Developed under an Indian Council of Medical Research project, the \textbf{UAV} was tailored for \textbf{autonomous} \textbf{delivery} of vaccines and medicines to remote areas, providing superior range and extended flight time compared to traditional \textbf{multirotors}.
+\sectionsep
+
+\sectionsep
+\end{minipage}
+\headrule
+\end{document}

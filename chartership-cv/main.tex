@@ -1,0 +1,239 @@
+% Shreyam - Curriculum Vitae for IOM3 CEng Chartership Application
+% Compiles with pdflatex (no custom fonts/classes required).
+%
+% This is a working draft. Sections marked [TODO: ...] need information
+% that has not been provided yet -- see README.md at the repo root for
+% the full list of what's still needed.
+
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{parskip}
+
+\hypersetup{colorlinks=true, urlcolor=blue, linkcolor=black}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{6pt}
+
+\titleformat{\subsection}{\bfseries}{}{0em}{}
+\titlespacing{\subsection}{0pt}{6pt}{2pt}
+
+\setlist[itemize]{leftmargin=1.4em, topsep=2pt, itemsep=2pt, parsep=0pt}
+
+\pagenumbering{gobble}
+
+\begin{document}
+
+%-----------------------------------------------------
+% HEADER
+%-----------------------------------------------------
+\begin{center}
+    {\Huge \bfseries Shreyam}\\[4pt]
+    +44 7854 00 3170 \textbar{} +91 8348 278095 \textbar{}
+    \href{mailto:shreyamkmr@gmail.com}{shreyamkmr@gmail.com} \\
+    \href{https://github.com/Shreyamkmr}{github.com/Shreyamkmr} \textbar{}
+    \href{https://in.linkedin.com/in/shreyam-%E2%A0%80-bb066b17a}{LinkedIn}
+    % [TODO: add current UK address / right-to-work status if the
+    % institute's CV template expects it]
+\end{center}
+
+%-----------------------------------------------------
+% PROFESSIONAL SUMMARY
+%-----------------------------------------------------
+\section*{Professional Summary}
+Metallurgical and Materials Engineer turned digitalization specialist, currently
+leading data-driven reliability, HR, procurement and EPS projects at Essar Oil UK.
+Working towards Chartered Engineer (CEng) status with the Institute of Materials,
+Minerals and Mining (IOM3).
+% [TODO: refine this once we know which UK-SPEC route (Further Learning /
+% Standard) and which competencies your experience will be mapped against]
+
+%-----------------------------------------------------
+% CHARTERSHIP / PROFESSIONAL MEMBERSHIP
+%-----------------------------------------------------
+\section*{Professional Membership}
+\begin{itemize}
+    \item Institute of Materials, Minerals and Mining (IOM3) --
+          [TODO: membership grade, membership number, date joined]
+    \item Target qualification: Chartered Engineer (CEng), assessed against the
+          Engineering Council's UK-SPEC standard
+          % [TODO: confirm route -- Standard, Further Learning, or
+          % Experiential Learning -- once known]
+\end{itemize}
+
+%-----------------------------------------------------
+% EDUCATION
+%-----------------------------------------------------
+\section*{Education}
+
+\subsection*{Indian Institute of Technology, Kharagpur}
+B.Tech. + M.Tech. (5-Year Dual Degree), Metallurgical and Materials Engineering \\
+Cumulative GPA: 7.92 / 10 \hfill July 2022, Kharagpur, India
+
+\subsection*{Shivam Convent}
+A Level \hfill June 2017, Patna, India \\
+90.40\%
+
+\subsection*{Satyam International}
+GCSE \hfill April 2015, Patna, India \\
+Cumulative GPA: 10 / 10
+
+%-----------------------------------------------------
+% EMPLOYMENT HISTORY
+%-----------------------------------------------------
+\section*{Employment History}
+
+\subsection*{Essar Oil UK Ltd. --- Digital Analyst, Digitalization}
+Oct 2023 -- Present, Cheshire, England, United Kingdom
+\begin{itemize}
+    \item Lead data-driven digital projects across multiple functions, including
+          reliability, HR, technology, EPS and procurement, using data analytics,
+          IoT, AI and cloud computing to optimize processes and improve efficiency.
+    \item Delivered significant enhancements to condition-based monitoring (CBM),
+          employee performance management and production accounting.
+    \item Reduced costs and improved decision-making through spend analysis and
+          contractor management.
+    % [TODO: add scope/scale detail an assessor would want -- team size,
+    % budget influenced, stakeholders managed, specific engineering judgement
+    % or risk decisions you made -- this is the "more experience" to add]
+\end{itemize}
+
+\subsection*{Vedanta Ltd. --- Associate Manager, Digitalization, Aluminium \& Power}
+Aug 2022 -- Oct 2023, Jharsuguda, Odisha, India
+\begin{itemize}
+    \item Enabled data-driven insights for strategic decision-making, championing
+          cost-saving and volume-increase initiatives, and advising on emerging
+          technologies.
+    \item Actively participated in decision workshops, empowering leaders with
+          insights through stakeholder partnership and data analytics.
+    % [TODO: same as above -- responsibility, leadership and technical
+    % judgement detail]
+\end{itemize}
+
+\subsection*{ArcelorMittal Nippon Steel --- R\&D Intern}
+Dec 2019 -- Jan 2020, Hazira, Gujarat, India
+\begin{itemize}
+    \item Developed a predictive model for steel properties using machine
+          learning (regression tree, random forest, SVM) with 5-fold
+          cross-validation for performance assessment.
+    \item Engineered features such as carbon equivalents to predict weld joint
+          brittleness and heat treatment requirements.
+\end{itemize}
+
+\subsection*{Aerial Robotics Lab, IIT Kharagpur --- Head, Hardware \& Embedded Team}
+May 2018 -- June 2022
+\begin{itemize}
+    \item Managed and directed a team of 10 junior hardware and embedded members,
+          completing an autonomous aerial delivery project for medicines and
+          vaccines.
+    \item Secured funding from the Indian Council of Medical Research (ICMR) and
+          oversaw participation in group projects and competitions.
+    \item Managed a budget of INR 15 million, ensuring financial stability
+          through monitoring and redistribution of funds.
+\end{itemize}
+
+%-----------------------------------------------------
+% KEY PROJECTS
+%-----------------------------------------------------
+\section*{Key Projects}
+% [TODO: once competency mapping is agreed, reorder/select projects to
+% best evidence UK-SPEC areas A-E rather than listing everything]
+
+\subsection*{Digital Twins for Plant Rotary Equipment --- Essar UK Services Ltd.}
+\textit{Aveva PI, PI Vision, Power BI, SQL, on-premise data gateway, custom visuals, SAP PM, CPI} \\
+Orchestrated a real-time performance analytics solution integrating process,
+sensor and system data into a unified reporting framework; defined KPIs, built
+automated dashboards and alerting for proactive decision-making and measurable
+reliability improvements.
+
+\subsection*{Advanced Analytics for e-Permit to Work --- Essar UK Services Ltd.}
+\textit{Power BI, SQL, on-premise data gateway, custom visuals} \\
+Transformed legacy permit data into advanced historical and near real-time
+monitoring reports, enabling proactive corrective action and measurable cost
+savings.
+
+\subsection*{Analytics Platform for Tanks --- Essar UK Services Ltd.}
+\textit{Power BI, SQL, on-premise data gateway, SharePoint, Excel, forecasting, OLEDB, PI SQL Commander} \\
+Integrated real-time tank data from multiple sources into a unified platform
+combining operational, metadata and geospatial information to support
+forecasting of capacity, availability and maintenance schedules.
+
+\subsection*{Statistical Optimization of Rolling Mill --- Vedanta Ltd.}
+\textit{Power BI, SQL, on-premise data gateway, OSI PI, MES, ML.NET} \\
+Developed a mill-speed optimization model for aluminium sheet manufacturing to
+minimize roll contact time, delivered via a near-real-time Power BI dashboard.
+
+\subsection*{Day-Ahead Price Prediction Model for IEX --- Vedanta Ltd.}
+\textit{REST API, Python, TensorFlow/Keras, Power BI} \\
+Built an LSTM deep-learning model predicting the Day-Ahead Market price on the
+Indian Energy Exchange, delivered as a Power BI dashboard with 24-hour advance,
+15-minute block-wise forecasts, residual error under $\pm$5\%.
+
+\subsection*{Smart CW Pump Running Suggestion --- Vedanta Ltd.}
+\textit{OSI PI, PI DataLink, Python, PIconnect} \\
+Developed a linear-programming optimization to recommend circulating-water pump
+configuration at a 4x600 MW thermal power plant, minimizing auxiliary power
+consumption.
+
+\subsection*{Coal Truck GPS Data Analytics --- Vedanta (BALCO)}
+\textit{R, Leaflet, geosphere} \\
+Analyzed over 8,000 coal-haulage trips across 5 mines to identify pilferage
+risk zones, frequent route deviations and faster routes by time of day.
+
+\subsection*{RPA in Finance Taxation --- Vedanta Ltd.}
+\textit{Power Automate, AI Builder, SharePoint} \\
+Built an unattended RPA bot triggered by Indian Customs mail to extract 100+
+fields from Bill of Entry and Shipping Bill documents using the AI Builder
+module of Microsoft Power Platform.
+
+\subsection*{Autonomous UAV for Vaccine/Medicine Delivery --- Aerial Robotics Lab, IIT KGP}
+\textit{ArduPilot, Pixhawk, Raspberry Pi, Mission Planner, LiDAR, GPS blending} \\
+Designed and built a hexacopter UAV platform under an ICMR-funded project for
+autonomous delivery of vaccines and medicines to remote areas.
+
+%-----------------------------------------------------
+% CONTINUING PROFESSIONAL DEVELOPMENT (CPD)
+%-----------------------------------------------------
+\section*{Continuing Professional Development}
+% [TODO: this section is required by IOM3/UK-SPEC assessors and is
+% currently empty -- add training courses, conferences, internal
+% certifications, and any CPD log entries]
+\begin{itemize}
+    \item Specialization in Data Science in R --- Johns Hopkins University
+    \item Machine Learning --- Stanford University
+    \item SQL Queries --- DataCamp
+\end{itemize}
+
+%-----------------------------------------------------
+% SKILLS
+%-----------------------------------------------------
+\section*{Skills}
+\textbf{Languages:} R, Python, C++, SQL, Power Query (M), DAX \\
+\textbf{Software \& Technology:} Git, Microsoft Power Platform, RPA, Excel,
+GitHub Pages, Power BI, Tableau
+
+%-----------------------------------------------------
+% AWARDS & RECOGNITION
+%-----------------------------------------------------
+\section*{Awards \& Recognition}
+\begin{itemize}
+    \item Essar UK Services Ltd. --- SPOT Awardee
+    \item Vedanta Aluminium and Power --- Sector CEO Awardee
+    \item IMAV-2019 Winner
+    \item NDA-II AFSB Qualified
+    \item 12th Std. Star Achiever
+\end{itemize}
+
+%-----------------------------------------------------
+% REFEREES
+%-----------------------------------------------------
+\section*{Referees}
+% [TODO: IOM3 CEng applications typically require two referees, at least
+% one already chartered -- add names, chartership status and contact details]
+Available on request.
+
+\end{document}
