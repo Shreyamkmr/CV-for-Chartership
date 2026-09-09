@@ -4,6 +4,10 @@ Working towards a Curriculum Vitae for a **Chartered Engineer (CEng)**
 application with the **Institute of Materials, Minerals and Mining (IOM3)**,
 assessed against the Engineering Council's UK-SPEC standard.
 
+**Current status (2026-09-09):** initial academic assessment enquiry sent to
+IOM3; they've asked for a current CV and academic certificates. See
+`chartership-cv/application-log.md`.
+
 ## Structure
 
 - `original/shreyam-cv-deedy.tex` -- the existing general-purpose resume,
@@ -25,6 +29,9 @@ assessed against the Engineering Council's UK-SPEC standard.
   to draw on when writing the actual UK-SPEC competence report. Deliberately
   excluded from the CV itself: internal document names, hostnames, and
   colleagues' names.
+- `chartership-cv/application-log.md` -- running record of the actual
+  correspondence with IOM3 (what's been sent, what's been asked for, open
+  action items). Update this as the application progresses.
 
 ### A note on the current draft's accuracy
 
@@ -51,9 +58,10 @@ projects. The current draft still needs:
 3. **Competency mapping refinement** -- a first pass now lives in
    `chartership-cv/main.tex`; it needs your review and, per item, the
    specific personal evidence the eventual competence report will require.
-4. **IOM3 membership details** -- current grade, membership number, date
-   joined, and which route is being followed (Standard / Further Learning /
-   Experiential Learning).
+4. **IOM3 membership details** -- current grade, membership number, and
+   which route is being followed (Standard / Further Learning /
+   Experiential Learning); the academic assessment IOM3 is now doing should
+   clarify this.
 5. **CPD record** -- still the thinnest section; training, courses,
    conferences, internal certifications since the original resume started.
 6. **Referees** -- IOM3 typically wants two, at least one already
